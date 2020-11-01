@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+
+    "name": "Tracking remover",
+    "description": "This extension removes trackings from URL",
+    "version": "0.0.1",
+
+    "background": {
+        "persistent": false,
+        "scripts": ["app.js", "redirect.js"]
+    },
+    "browser_action": {
+       "default_popup": "popup.html",
+       "default_title": "Tracking remover"
+    },
+    "permissions": [ "tabs", "activeTab", "background", "\u003Call\u005Furls\u003E"]
+}
