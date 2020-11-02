@@ -26,3 +26,7 @@ Chrome extension for removing tracking such as `fbclid` and `utm_source`.
 
 - `chromium --auto-open-devtools-for-tabs` is really handy. :D
 - Use `prettier --tab-width 4 -w *.{js,json}` to format files.
+
+## See also
+
+- [Neat-URL](https://github.com/Smile4ever/Neat-URL)
