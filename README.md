@@ -1,6 +1,6 @@
 # Tracking remover
 
-Chrome extension for removing tracking such as `fbclid`.
+Chrome extension for removing tracking such as `fbclid` and `utm_source`.
 
 ## Installation
 
@@ -10,11 +10,19 @@ Chrome extension for removing tracking such as `fbclid`.
 
 ## Technical details and limitations
 
-- This plugin leverages the `chrome.tabs.onUpdated` API to inspect the URL.
-- If `fbclid` is in the URL parameters, it immediately issues a redirection to the same URL *without* `fbclid` parameter.
-- Since `chrome.tabs.onUpdated` is a non-blocking API, the browser may (or may not) fire the request already.
-- Since `chrome.tabs.onUpdated` is monitoring on the callee URL, this extension requires the permission with `<all_url>`.
+- This plugin leverages the `chrome.webRequest.onBeforeRequest` API to inspect all request URLs.
+- If tracking parameter (such as `fbclid`) found in the URL parameters, it immediately issues a redirection to the same URL *without* the parameters.
+- Since `chrome.webRequest.onBeforeRequest` is monitoring on the callee URL, this extension requires the permission with `<all_url>`.
 
-## Developement
+## Screenshots
+
+![img1](imgs/1.png)
+
+![img2](imgs/2.png)
+
+![img3](imgs/3.png)
+
+## Development
 
 - `chromium --auto-open-devtools-for-tabs` is really handy. :D
+- Use `prettier --tab-width 4 -w *.{js,json}` to format files.
