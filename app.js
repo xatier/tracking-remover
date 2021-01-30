@@ -1,4 +1,7 @@
 const banned_params = [
+    // facebook
+    "__cft__[0]",
+    "__tn__",
     "fbclid",
     // Google Analytics https://support.google.com/analytics/answer/1033863
     "utm_campaign",
