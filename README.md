@@ -30,3 +30,5 @@ Chrome extension for removing tracking such as `fbclid` and `utm_source`.
 ## See also
 
 - [Neat-URL](https://github.com/Smile4ever/Neat-URL)
+- [ClearURLs](https://github.com/ClearURLs/Addon/)
+- [uBlock-issues/issues/1356](https://github.com/uBlockOrigin/uBlock-issues/issues/1356)
