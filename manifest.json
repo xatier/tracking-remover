@@ -3,7 +3,7 @@
 
     "name": "Tracking remover",
     "description": "This extension removes trackings from URL",
-    "version": "0.0.3",
+    "version": "0.0.4",
 
     "background": {
         "persistent": true,
