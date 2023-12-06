@@ -11,6 +11,8 @@ const banned_params = [
     "utm_term",
     // twitter
     "ref_src",
+    // YouTube
+    "si",
 ];
 
 function removeParam(original, target) {
